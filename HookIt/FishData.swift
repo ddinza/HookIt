@@ -17,12 +17,14 @@ struct FishData {
             bestTime: "Early morning, late afternoon, and moving tides.",
             howToCatch: "Cast near structure and retrieve slowly, if using artificial bait. Snook often ambush bait near cover.",
             bestSetup: "Medium-heavy spinning rod with a 3000-4000 size reel, 20-30 lb braid, and 30-40 lb fluorocarbon leader.",
-            eatingQuality: "Excellent table fish",
+            eatingQuality: "Excellent table fish with mild, flaky white meat.",
             behavior: "Snook are ambush predators that hide near structure and strike quickly.",
-            legalSize: "28-33 inches",
-            bagLimit: "1 per person",
-            season: "Varies by region"
+            identificationTips: "sleek silver body, a bold black stripe along their side, a lower jaw that extends slightly forward, and yellowish pelvic and anal fins.",
+            averageSize: "20–40 inches (common), occasionally over 48 inches.",
+            similarSpecies: ["Tarpon", "Ladyfish"]
+            
         ),
+        
         FishSpecies(
             imageName: "redfish",
             name: "Redfish",
@@ -31,12 +33,13 @@ struct FishData {
             bestTime: "Morning, late afternoon, and incoming tides.",
             howToCatch: "Cast near grass edges or oyster bars and retrieve slowly.",
             bestSetup: "Medium spinning rod with a 3000 size reel, 10-20 lb braid, and 20-30 lb fluorocarbon leader.",
-            eatingQuality: "Very good",
+            eatingQuality: "Very good table fish with firm, mild meat.",
             behavior: "Redfish often search the bottom for crabs, shrimp, and small fish.",
-            legalSize: "18-27 inches",
-            bagLimit: "1 per person",
-            season: "Open year-round"
+            identificationTips: "Copper-bronze body with a single black spot near the tail and a broad, slightly rounded tail.",
+            averageSize: "18–30 inches (common).",
+            similarSpecies: ["Black Drum"]
         ),
+        
         FishSpecies(
             imageName: "tarpon",
             name: "Tarpon",
@@ -45,12 +48,13 @@ struct FishData {
             bestTime: "Early morning, evening, and moving tides.",
             howToCatch: "Use strong tackle and present bait near rolling fish or current lines.",
             bestSetup: "Heavy spinning rod with a 6000-8000 size reel, 50-80 lb braid, and 60-100 lb fluorocarbon leader.",
-            eatingQuality: "Not commonly eaten; usually catch and release.",
+            eatingQuality: "Generally considered poor table fare and rarely eaten.",
             behavior: "Tarpon are powerful fighters known for jumping when hooked.",
-            legalSize: "Catch and release in most situations",
-            bagLimit: "Special regulations apply",
-            season: "Varies by region"
+            identificationTips: "Large silver scales, huge upward-facing mouth, long dorsal fin ray, deeply forked tail.",
+            averageSize: "40–80 inches (common).",
+            similarSpecies: ["Ladyfish", "Snook"]
         ),
+        
         FishSpecies(
             imageName: "mangrovesnapper",
             name: "Mangrove Snapper",
@@ -59,12 +63,13 @@ struct FishData {
             bestTime: "Dawn, dusk, and strong tidal movement.",
             howToCatch: "Use light tackle and place bait close to structure.",
             bestSetup: "Light to medium spinning rod with a 2500-3000 size reel, 10-15 lb braid, and 15-25 lb fluorocarbon leader.",
-            eatingQuality: "Excellent table fish.",
+            eatingQuality: "Excellent table fish with sweet, firm white meat.",
             behavior: "Mangrove snapper are cautious fish that often stay close to cover.",
-            legalSize: "10 inches minimum",
-            bagLimit: "5 per person",
-            season: "Open year-round"
+            identificationTips: "Recognized by its bronze to gray body, reddish eyes, and dark horizontal stripes that are more visible in younger fish.",
+            averageSize: "10–18 inches (common).",
+            similarSpecies: ["Lane Snapper", "Mutton Snapper"]
         ),
+        
         FishSpecies(
             imageName: "largemouthbass",
             name: "Largemouth Bass",
@@ -73,12 +78,13 @@ struct FishData {
             bestTime: "Early morning, late afternoon, and cloudy conditions.",
             howToCatch: "Cast near weeds, docks, lily pads, and submerged structure.",
             bestSetup: "Medium baitcasting or spinning rod with a 2500-3000 size reel, 10-20 lb line, and weedless hooks for heavy cover.",
-            eatingQuality: "Good, though many anglers practice catch and release.",
+            eatingQuality: "Good table fish with mild white meat.",
             behavior: "Bass are ambush predators that strike from cover.",
-            legalSize: "Varies by location",
-            bagLimit: "Varies by location",
-            season: "Usually open year-round, depending on location"
+            identificationTips: "Easily recognized by its large mouth that extends past the eye, green body, and dark horizontal stripe running along its side.",
+            averageSize: "12–20 inches (common).",
+            similarSpecies: ["Peacock Bass", "Smallmouth Bass"]
         ),
+        
         FishSpecies(
             imageName: "peacockbass",
             name: "Peacock Bass",
@@ -87,12 +93,13 @@ struct FishData {
             bestTime: "Morning and late afternoon, especially on warm sunny days.",
             howToCatch: "Cast near structure and retrieve quickly. Peacock bass are aggressive and often chase fast-moving lures.",
             bestSetup: "Medium spinning or baitcasting rod with a 2500-3000 size reel, 10-20 lb braid, and 15-25 lb fluorocarbon leader.",
-            eatingQuality: "Good, but many anglers practice catch and release.",
+            eatingQuality: "Good table fish with firm, mild meat.",
             behavior: "Peacock bass are aggressive visual predators that attack baitfish and lures with speed.",
-            legalSize: "Varies by location",
-            bagLimit: "Varies by location",
-            season: "Usually open year-round, depending on location"
+            identificationTips: "Bright golden-green body with dark vertical bars and a distinctive black spot outlined in yellow near the tail.",
+            averageSize: "14–24 inches (common).",
+            similarSpecies: ["Largemouth Bass"]
         ),
+        
         FishSpecies(
             imageName: "mahimahi",
             name: "Mahi Mahi",
@@ -101,26 +108,28 @@ struct FishData {
             bestTime: "Morning and midday when offshore conditions are calm and bait is present.",
             howToCatch: "Troll near weed lines or floating structure, then cast bait or lures when fish are spotted.",
             bestSetup: "Medium-heavy offshore rod with a 5000-8000 size reel, 30-50 lb braid or mono, and 40-60 lb leader.",
-            eatingQuality: "Excellent table fish with firm, mild meat.",
+            eatingQuality: "Excellent table fish with firm, mild, slightly sweet meat.",
             behavior: "Mahi mahi are fast, colorful offshore predators that often travel in schools near floating cover.",
-            legalSize: "Varies by region",
-            bagLimit: "Varies by region",
-            season: "Varies by region"
+            identificationTips: "Easy to identify by its vibrant blue, green, and yellow colors, blunt forehead, and deeply forked tail.",
+            averageSize: "20–40 inches (common).",
+            similarSpecies: ["Yellow Jack"]
         ),
+        
         FishSpecies(
             imageName: "grouper",
-            name: "Grouper",
-            habitat: "Found near reefs, wrecks, ledges, rocks, and offshore bottom structure.",
-            bestBait: "Live pinfish, sardines, squid, cut bait, and large jigs.",
-            bestTime: "Moving tides and daytime bottom fishing over structure.",
-            howToCatch: "Drop bait close to bottom structure and keep pressure on the fish to prevent it from breaking off in rocks.",
-            bestSetup: "Heavy conventional or spinning setup with 50-80 lb braid and 60-100 lb leader for strong bottom structure.",
-            eatingQuality: "Excellent table fish with firm white meat.",
-            behavior: "Grouper are powerful bottom predators that ambush prey and quickly dive back into structure.",
-            legalSize: "Varies by species and region",
-            bagLimit: "Varies by species and region",
-            season: "Varies by species and region"
+            name: "Grouper (Goliath)",
+            habitat: "Found around reefs, wrecks, rocky ledges, bridges, docks, and other large underwater structure throughout Florida. Juveniles are commonly found around mangroves and estuaries.",
+            bestBait: "Large live mullet, ladyfish, blue runner, jack crevalle, catfish, and other large natural baits.",
+            bestTime: "Morning, evening, and whenever strong tidal movement concentrates bait around structure.",
+            howToCatch: "Present large live bait close to heavy structure using extremely heavy tackle. If hooked, release the fish immediately without removing it from the water.",
+            bestSetup: "Extra-heavy conventional or spinning setup with an 8000–14000 size reel, 80–130 lb braid, and heavy leader.",
+            eatingQuality: "Excellent table fish with firm, flaky white meat. ***Harvest prohibited in Florida; except with a special permit and tag.***",
+            behavior: "Goliath groupers are massive ambush predators that spend much of their lives around reefs, wrecks, docks, and bridge pilings.",
+            identificationTips: "Recognized by its enormous body, rounded tail, broad mouth, yellow-brown coloration with dark blotches, and small eyes. Adults can exceed 8 feet in length.",
+            averageSize: "4–8 feet (common adults), with fish over 800 pounds possible.",
+            similarSpecies: ["Gag Grouper", "Black Grouper", "Red Grouper"]
         ),
+        
         FishSpecies(
             imageName: "pompano",
             name: "Pompano",
@@ -129,12 +138,13 @@ struct FishData {
             bestTime: "Incoming tide, early morning, and periods with clean moving water.",
             howToCatch: "Fish near the surf line or sandy channels using small natural baits or jigs bounced along the bottom.",
             bestSetup: "Light to medium spinning rod with a 2500-4000 size reel, 10-15 lb braid, and 15-20 lb fluorocarbon leader.",
-            eatingQuality: "Excellent table fish and highly valued for eating.",
+            eatingQuality: "Excellent table fish and one of Florida's most prized eating fish.",
             behavior: "Pompano travel in schools and feed along sandy bottoms for small crustaceans.",
-            legalSize: "11 inches fork length",
-            bagLimit: "6 per person",
-            season: "Open year-round"
+            identificationTips: "Small, silver fish with a deep, flattened body, forked tail, and long pectoral fins that give it a graceful appearance.",
+            averageSize: "10–18 inches (common).",
+            similarSpecies: ["Permit", "Palometa"]
         ),
+        
         FishSpecies(
             imageName: "sheepshead",
             name: "Sheepshead",
@@ -143,12 +153,13 @@ struct FishData {
             bestTime: "Cooler months, moving tides, and daytime fishing around structure.",
             howToCatch: "Use small hooks and fish close to structure. Watch carefully because sheepshead bites can be very subtle.",
             bestSetup: "Medium-light spinning rod with a 2500-3000 size reel, 10-15 lb braid, and 15-25 lb fluorocarbon leader.",
-            eatingQuality: "Excellent table fish with firm white meat.",
+            eatingQuality: "Excellent table fish with sweet, firm white meat.",
             behavior: "Sheepshead use strong teeth to crush barnacles, crabs, and shellfish near structure.",
-            legalSize: "Varies by region",
-            bagLimit: "Varies by region",
-            season: "Varies by region"
+            identificationTips: "Recognized by its bold black vertical stripes and human-like teeth used to crush crabs, barnacles, and shellfish.",
+            averageSize: "12–20 inches (common).",
+            similarSpecies: ["Black Drum", "Atlantic Spadefish"]
         ),
+        
         FishSpecies(
             imageName: "yellowjack",
             name: "Yellow Jack",
@@ -157,15 +168,384 @@ struct FishData {
             bestTime: "Morning, evening, and moving tides in clear water.",
             howToCatch: "Cast live bait or jigs near reefs and current edges. Use steady pressure because jacks fight hard.",
             bestSetup: "Medium spinning rod with a 3000-5000 size reel, 15-30 lb braid, and 25-40 lb fluorocarbon leader.",
-            eatingQuality: "Very good when fresh and properly cleaned.",
+            eatingQuality: "Very good table fish when fresh, with firm meat.",
             behavior: "Yellow jacks are strong, fast predators that often patrol reefs and clear-water structure.",
-            legalSize: "Varies by region",
-            bagLimit: "Varies by region",
-            season: "Varies by region"
-        )
+            identificationTips: "Slender silver body with a yellow stripe running along the side and bright yellow tail and fins.",
+            averageSize: "18–30 inches (common).",
+            similarSpecies: ["Crevalle Jack", "Blue Runner"]
+        ),
+        
+        FishSpecies(
+            imageName: "ladyfish",
+            name: "Ladyfish",
+            habitat: "Found in bays, passes, beaches, and coastal waters. They often travel in schools near the surface and around areas with strong current.",
+            bestBait: "Live shrimp, pilchards, small baitfish, spoons, jigs, and small plugs.",
+            bestTime: "Early morning, late afternoon, and during strong tidal movement.",
+            howToCatch: "Cast small lures or live bait into feeding schools and retrieve quickly. Ladyfish are aggressive and often strike near the surface.",
+            bestSetup: "Light to medium spinning rod with a 2500-3000 size reel, 10-15 lb braid, and 15-25 lb fluorocarbon leader.",
+            eatingQuality: "Generally considered poor table fare because of its soft, bony flesh.",
+            behavior: "Ladyfish are fast, aggressive schooling fish known for powerful runs and frequent jumps.",
+            identificationTips: "Recognized by its long silver body, deeply forked tail, large eyes, and lower jaw that extends slightly forward.",
+            averageSize: "12–24 inches (common).",
+            similarSpecies: ["Snook", "Tarpon"]
+        ),
+        FishSpecies(
+            imageName: "blackdrum",
+            name: "Black Drum",
+            habitat: "Found around bridges, docks, oyster bars, channels, beaches, and estuaries. Larger fish often stay near deeper structure and passes.",
+            bestBait: "Blue crabs, shrimp, clams, oysters, cut bait, and small crabs.",
+            bestTime: "Cooler months, moving tides, and periods when fish are feeding near bottom structure.",
+            howToCatch: "Present natural bait on or near the bottom around bridges, oyster bars, channels, and deep holes. Use steady pressure because larger black drum are powerful.",
+            bestSetup: "Medium-heavy spinning or conventional setup with 20-40 lb braid and 30-50 lb fluorocarbon leader.",
+            eatingQuality: "Smaller fish are generally considered good table fare, while larger fish can have coarser flesh.",
+            behavior: "Black drum feed along the bottom for crabs, shellfish, shrimp, and other small organisms.",
+            identificationTips: "Recognized by its deep gray or black body, several dark vertical bars in younger fish, and small chin barbels beneath the mouth.",
+            averageSize: "14–30 inches (common), with much larger fish possible.",
+            similarSpecies: ["Redfish", "Sheepshead"]
+        ),
+        FishSpecies(
+            imageName: "permit",
+            name: "Permit",
+            habitat: "Found around shallow flats, wrecks, reefs, beaches, and channels throughout the Florida Keys and coastal waters.",
+            bestBait: "Live crabs, shrimp, small blue crabs, permit jigs, and soft plastics.",
+            bestTime: "Early morning, late afternoon, and on moving tides.",
+            howToCatch: "Present live crabs or shrimp ahead of cruising fish on shallow flats, or vertically jig around wrecks and reefs.",
+            bestSetup: "Medium-heavy spinning rod with a 4000–5000 size reel, 15–30 lb braid, and 20–40 lb fluorocarbon leader.",
+            eatingQuality: "Very good table fish with firm, mild white meat.",
+            behavior: "Permit are cautious, powerful fish that often cruise shallow flats searching for crabs and other crustaceans.",
+            identificationTips: "Recognized by its deep, silver body, long sickle-shaped dorsal and anal fins, forked tail, and orange-yellow belly fins.",
+            averageSize: "18–30 inches (common), with much larger fish possible.",
+            similarSpecies: ["Pompano", "Palometa"]
+        ),
+        FishSpecies(
+            imageName: "crevallejack",
+            name: "Crevalle Jack",
+            habitat: "Found around beaches, inlets, bridges, jetties, mangroves, bays, and nearshore reefs throughout Florida.",
+            bestBait: "Live pilchards, mullet, shrimp, topwater plugs, spoons, jigs, and soft plastics.",
+            bestTime: "Early morning, late afternoon, and whenever baitfish are actively feeding.",
+            howToCatch: "Cast fast-moving lures or live bait into feeding schools and retrieve quickly. Crevalle jacks are aggressive predators that often strike violently.",
+            bestSetup: "Medium-heavy spinning rod with a 4000–6000 size reel, 20–40 lb braid, and 30–50 lb fluorocarbon leader.",
+            eatingQuality: "Generally considered fair table fare. Many anglers release them because of their strong flavor and dark meat.",
+            behavior: "Crevalle jacks are extremely aggressive schooling predators known for their incredible strength and endurance.",
+            identificationTips: "Recognized by its deep silver body, black spot near the gill cover, yellowish tail, and broad, muscular shape.",
+            averageSize: "18–30 inches (common), with fish over 40 inches possible.",
+            similarSpecies: ["Yellow Jack", "Blue Runner"]
+        ),
+        FishSpecies(
+            imageName: "lanesnapper",
+            name: "Lane Snapper",
+            habitat: "Found around coral reefs, patch reefs, rocky bottoms, grass flats, and wrecks throughout South Florida and the Florida Keys.",
+            bestBait: "Live shrimp, squid, cut bait, pilchards, and small jigs.",
+            bestTime: "Morning, evening, and during moving tides over reefs and patch reefs.",
+            howToCatch: "Fish natural bait close to reefs and rocky bottom using light tackle. Lane snapper often feed near the bottom but will rise to intercept bait.",
+            bestSetup: "Light to medium spinning rod with a 2500–3000 size reel, 10–15 lb braid, and 15–25 lb fluorocarbon leader.",
+            eatingQuality: "Excellent table fish with sweet, flaky white meat.",
+            behavior: "Lane snapper often form small schools and feed on shrimp, crabs, squid, and small baitfish.",
+            identificationTips: "Recognized by its bright yellow horizontal stripes, yellow fins, and a distinct black spot below the rear of the dorsal fin.",
+            averageSize: "10–16 inches (common).",
+            similarSpecies: ["Mangrove Snapper", "Mutton Snapper"]
+        ),
+        FishSpecies(
+            imageName: "muttonsnapper",
+            name: "Mutton Snapper",
+            habitat: "Found around coral reefs, rocky ledges, wrecks, patch reefs, and deeper offshore waters throughout South Florida and the Florida Keys.",
+            bestBait: "Live pilchards, pinfish, shrimp, squid, ballyhoo, and cut bait.",
+            bestTime: "Early morning, late afternoon, and around spawning periods during moving tides.",
+            howToCatch: "Fish close to reefs and structure using live bait or cut bait. Mutton snapper are cautious and often require a natural presentation.",
+            bestSetup: "Medium-heavy spinning or conventional rod with a 4000–6000 size reel, 20–30 lb braid, and 30–50 lb fluorocarbon leader.",
+            eatingQuality: "Excellent table fish with firm, mild, white meat.",
+            behavior: "Mutton snapper are powerful reef predators that often travel alone or in small groups while feeding on fish and crustaceans.",
+            identificationTips: "Recognized by its pink to reddish body, bright blue lines on the face, pointed snout, and a small dark spot on the upper side below the rear of the dorsal fin.",
+            averageSize: "18–30 inches (common), with much larger fish possible.",
+            similarSpecies: ["Mangrove Snapper", "Lane Snapper"]
+        ),
+        FishSpecies(
+            imageName: "gaggrouper",
+            name: "Gag Grouper",
+            habitat: "Found around reefs, wrecks, rocky ledges, and offshore bottom structure throughout the Gulf of Mexico and Atlantic coast of Florida.",
+            bestBait: "Live pinfish, grunts, sardines, squid, cut bait, and large jigs.",
+            bestTime: "Morning, evening, and during moving tides while fishing offshore structure.",
+            howToCatch: "Drop live bait or jigs close to reefs and ledges. Keep steady pressure immediately after the strike to prevent the fish from returning to structure.",
+            bestSetup: "Heavy spinning or conventional rod with a 5000–8000 size reel, 40–65 lb braid, and 60–80 lb fluorocarbon leader.",
+            eatingQuality: "Excellent table fish with firm, mild white meat.",
+            behavior: "Gag grouper are powerful ambush predators that stay close to reefs and rocky structure waiting to strike passing prey.",
+            identificationTips: "Recognized by its long body, mottled gray and brown camouflage pattern, squared tail, and dark worm-like markings across the body.",
+            averageSize: "24–36 inches (common), with much larger fish possible.",
+            similarSpecies:["Black Grouper", "Red Grouper", "Grouper (Goliath)"]
+        ),
+        FishSpecies(
+            imageName: "redgrouper",
+            name: "Red Grouper",
+            habitat: "Found around rocky ledges, reefs, hard bottom, and offshore structure throughout Florida, especially in the Gulf of Mexico and the Florida Keys.",
+            bestBait: "Live pinfish, sardines, squid, cut bait, and large jigs.",
+            bestTime: "Morning, evening, and during moving tides while fishing offshore reefs and ledges.",
+            howToCatch: "Fish natural bait or heavy jigs close to the bottom around reefs and rocky structure. Reel quickly after the strike to keep the fish from reaching cover.",
+            bestSetup: "Heavy spinning or conventional rod with a 5000–8000 size reel, 40–65 lb braid, and 60–80 lb fluorocarbon leader.",
+            eatingQuality: "Excellent table fish with mild, flaky white meat.",
+            behavior: "Red grouper are bottom-dwelling ambush predators that spend much of their time around reefs, rocky ledges, and holes.",
+            identificationTips: "Recognized by its reddish-brown body covered with small white spots, stocky build, rounded tail, and reddish fins.",
+            averageSize: "20–30 inches (common), with much larger fish possible.",
+            similarSpecies: ["Black Grouper", "Gag Grouper", "Grouper (Goliath)"]
+        ),
+        FishSpecies(
+            imageName: "bluerunner",
+            name: "Blue Runner",
+            habitat: "Found around reefs, wrecks, bridges, passes, beaches, and offshore structures throughout Florida. They commonly swim in schools in open water.",
+            bestBait: "Small pilchards, shrimp, squid, jigs, spoons, and small plugs.",
+            bestTime: "Early morning, late afternoon, and whenever schools of baitfish are active.",
+            howToCatch: "Cast small jigs, spoons, or live bait into moving schools and retrieve at a steady or fast pace.",
+            bestSetup: "Light to medium spinning rod with a 2500–4000 size reel, 10–20 lb braid, and 15–30 lb fluorocarbon leader.",
+            eatingQuality: "Fair table fare when handled quickly, but more commonly used as live bait for larger predatory fish.",
+            behavior: "Blue runners are fast, active schooling fish that chase small baitfish in open water and around structure.",
+            identificationTips: "Look for a slender silver body with a bluish-green back, deeply forked tail, dark spot near the upper edge of the gill cover, and a line of hardened scutes near the tail.",
+            averageSize: "10–18 inches (common), with larger fish possible.",
+            similarSpecies: ["Crevalle Jack", "Yellow Jack"]
+        ),
+        FishSpecies(
+            imageName: "blackgrouper",
+            name: "Black Grouper",
+            habitat: "Found around coral reefs, rocky ledges, wrecks, drop-offs, and other offshore structure. Juveniles may also be found in shallower coastal waters.",
+            bestBait: "Live pinfish, grunts, pilchards, sardines, squid, cut bait, and large jigs.",
+            bestTime: "Early morning, late afternoon, and during moving tides around reefs and deep structure.",
+            howToCatch: "Present live bait or heavy jigs close to reefs and ledges. Apply strong pressure immediately after the strike to keep the fish from reaching cover.",
+            bestSetup: "Heavy spinning or conventional rod with a 6000–10000 size reel, 50–80 lb braid, and 60–100 lb fluorocarbon leader.",
+            eatingQuality: "Excellent table fish with firm, mild, flaky white meat.",
+            behavior: "Black grouper are powerful ambush predators that remain close to reefs and rocky structure while feeding on fish, squid, and crustaceans.",
+            identificationTips: "Look for a dark gray or brown body covered with irregular rectangular blotches. The edges of the dorsal, tail, and anal fins often have a dark or black border.",
+            averageSize: "24–40 inches (common), with much larger fish possible.",
+            similarSpecies: ["Gag Grouper", "Red Grouper", "Grouper (Goliath)"]
+        ),
+        FishSpecies(
+            imageName: "porgy(jolthead)",
+            name: "Porgy (Jolthead)",
+            habitat: "Found around reefs, patch reefs, rocky bottoms, wrecks, and seagrass beds throughout the Florida Keys and South Florida.",
+            bestBait: "Shrimp, squid, cut bait, clams, sand fleas, and small jigs.",
+            bestTime: "Morning, evening, and while fishing natural reefs and patch reefs.",
+            howToCatch: "Fish close to the bottom using small hooks tipped with shrimp or squid. Porgies often feed in small schools around structure.",
+            bestSetup: "Light spinning rod with a 2500–3000 size reel, 10–15 lb braid, and 15–20 lb fluorocarbon leader.",
+            eatingQuality: "Excellent table fish with mild, flaky white meat.",
+            behavior: "Porgies forage close to the bottom, feeding on crabs, shrimp, mollusks, worms, and other small invertebrates.",
+            identificationTips: "Recognized by its deep silver body, steep forehead, large eye, and strong teeth used for crushing shellfish.",
+            averageSize: "10–16 inches (common).",
+            similarSpecies: ["Sheepshead", "Yellowtail Snapper"]
+        ),
+        FishSpecies(
+            imageName: "yellowtailsnapper",
+            name: "Yellowtail Snapper",
+            habitat: "Found around coral reefs, patch reefs, wrecks, and rocky ledges throughout the Florida Keys and South Florida. They often school in clear water above reefs.",
+            bestBait: "Shrimp, squid, pilchards, ballyhoo, cut bait, and small jigs.",
+            bestTime: "Morning, evening, and during moving tides over reefs and patch reefs.",
+            howToCatch: "Chum the water with small bait pieces and present small hooks tipped with shrimp or squid. Yellowtail snapper often feed higher in the water column than other snapper species.",
+            bestSetup: "Light spinning rod with a 2500–3000 size reel, 10–15 lb braid, and 15–20 lb fluorocarbon leader.",
+            eatingQuality: "Excellent table fish with sweet, flaky white meat.",
+            behavior: "Yellowtail snapper are schooling fish that feed on shrimp, squid, small baitfish, and plankton drifting above reefs.",
+            identificationTips: "Recognized by its bright yellow stripe running from the nose to the tail, vivid yellow tail, slender silver body, and blue highlights above the yellow stripe.",
+            averageSize: "12–20 inches (common).",
+            similarSpecies: ["Lane Snapper", "Mutton Snapper", "Mangrove Snapper"]
+        ),
+        FishSpecies(
+            imageName: "nurseshark",
+            name: "Nurse Shark",
+            habitat: "Found around coral reefs, rocky ledges, mangrove islands, seagrass flats, and shallow coastal waters. They are often seen resting motionless on the bottom.",
+            bestBait: "Fish, squid, octopus, shrimp, crabs, and other bottom-dwelling prey.",
+            bestTime: "Evening, nighttime, and periods of moving water around reefs and shallow flats.",
+            howToCatch: "Present sturdy natural bait near the bottom around reefs, ledges, or channels. Use heavy tackle and avoid removing the shark from the water unnecessarily.",
+            bestSetup: "Heavy spinning or conventional rod with a 6000–10000 size reel, 50–80 lb braid, a heavy leader, and a non-offset circle hook when using natural bait.",
+            eatingQuality: "Firm meat, but generally not considered a highly valued table fish.",
+            behavior: "Nurse sharks are slow-moving bottom dwellers that often rest during the day and become more active while feeding at night.",
+            identificationTips: "Recognized by its broad, blunt head, very small eyes, two short barbels beside the mouth, rounded fins, and yellowish-brown body.",
+            averageSize: "5–8 feet (common), with adults reaching about 9 feet.",
+            similarSpecies: ["Lemon Shark"]
+        ),
+        FishSpecies(
+            imageName: "blacktipshark",
+            name: "Blacktip Shark",
+            habitat: "Found around beaches, sandbars, inlets, reefs, bays, and nearshore waters throughout Florida. They are especially common in the Florida Keys and often follow schools of baitfish.",
+            bestBait: "Ladyfish, mullet, bonito, blue runner, jack crevalle, and other fresh cut or live bait.",
+            bestTime: "Early morning, late afternoon, and whenever baitfish are active.",
+            howToCatch: "Present fresh cut bait or live bait near bait schools, sandbars, or channels. Use heavy tackle and avoid removing the shark from the water.",
+            bestSetup: "Heavy spinning or conventional rod with a 6000–10000 size reel, 50–80 lb braid, a heavy leader, and a non-offset circle hook when using natural bait.",
+            eatingQuality: "Good table fare when properly bled and cleaned shortly after harvest.",
+            behavior: "Blacktip sharks are fast, active predators that often hunt in schools and are well known for their spectacular spinning jumps after being hooked.",
+            identificationTips: "Recognized by its slender body and distinct black markings on most fins, except the anal fin, which is plain and pale.",
+            averageSize: "4–6 feet (common), with larger adults exceeding 7 feet.",
+            similarSpecies: ["Spinner Shark", "Blacknose Shark", "Caribbean Reef Shark"]
+        ),
+        FishSpecies(
+            imageName: "lemonshark",
+            name: "Lemon Shark",
+            habitat: "Found around shallow bays, mangrove shorelines, seagrass flats, sandy bottoms, reefs, and channels throughout South Florida and the Florida Keys.",
+            bestBait: "Ladyfish, mullet, blue runner, bonito, jack crevalle, and other fresh cut or live bait.",
+            bestTime: "Early morning, late afternoon, evening, and whenever baitfish are active.",
+            howToCatch: "Present fresh cut bait or live bait near mangroves, flats, or channels. Use heavy tackle and avoid removing the shark from the water.",
+            bestSetup: "Heavy spinning or conventional rod with a 6000–10000 size reel, 50–80 lb braid, a heavy leader, and a non-offset circle hook when using natural bait.",
+            eatingQuality: "Good table fare when legally harvested and properly prepared.",
+            behavior: "Lemon sharks are slow-moving but powerful predators that often patrol shallow flats and mangrove shorelines in search of fish, rays, and crustaceans.",
+            identificationTips: "Recognized by its yellowish-brown body, broad rounded snout, two similarly sized dorsal fins, and lack of distinct black fin markings.",
+            averageSize: "6–9 feet (common), with larger adults exceeding 10 feet.",
+            similarSpecies: ["Nurse Shark", "Bull Shark"]
+        ),
+        FishSpecies(
+            imageName: "bullshark",
+            name: "Bull Shark",
+            habitat: "Found around beaches, inlets, rivers, estuaries, mangroves, and nearshore waters throughout Florida. Bull sharks are one of the few sharks that regularly enter freshwater.",
+            bestBait: "Ladyfish, mullet, bonito, blue runner, jack crevalle, and other fresh cut or live bait.",
+            bestTime: "Early morning, late afternoon, evening, and whenever baitfish are active.",
+            howToCatch: "Present fresh cut bait or live bait near channels, beaches, or river mouths. Use heavy tackle and avoid removing the shark from the water.",
+            bestSetup: "Heavy spinning or conventional rod with a 6000–10000 size reel, 50–80 lb braid, a heavy leader, and a non-offset circle hook when using natural bait.",
+            eatingQuality: "Good table fare when legally harvested and properly prepared.",
+            behavior: "Bull sharks are powerful, aggressive predators capable of living in both saltwater and freshwater. They commonly patrol beaches, estuaries, and river mouths.",
+            identificationTips: "Recognized by its broad, blunt snout, stocky body, relatively small eyes, and tall triangular first dorsal fin. Unlike Blacktip Sharks, the fins lack distinct black markings.",
+            averageSize: "6–9 feet (common), with large adults exceeding 10 feet.",
+            similarSpecies: ["Lemon Shark", "Blacktip Shark", "Sandbar Shark"]
+        ),
+        FishSpecies(
+            imageName: "bonnetheadshark",
+            name: "Bonnethead Shark",
+            habitat: "Found around seagrass flats, sandy bays, estuaries, mangrove shorelines, and shallow coastal waters throughout Florida, especially the Florida Keys.",
+            bestBait: "Shrimp, blue crabs, squid, cut bait, and small fish.",
+            bestTime: "Morning, evening, and moving tides over shallow flats.",
+            howToCatch: "Present shrimp, crab, or cut bait on the bottom around seagrass flats and sandy bays. Bonnetheads are common in shallow water and fight well on light tackle.",
+            bestSetup: "Medium spinning rod with a 4000–5000 size reel, 20–30 lb braid, a heavy leader, and a non-offset circle hook when using natural bait.",
+            eatingQuality: "Good table fare when legally harvested and properly prepared.",
+            behavior: "Bonnethead sharks spend much of their time cruising shallow flats feeding on crabs, shrimp, mollusks, and small fish.",
+            identificationTips: "Recognized by its small hammer-shaped head with rounded edges, slender body, and relatively small size compared to other hammerhead sharks.",
+            averageSize: "2–4 feet (common), occasionally reaching 5 feet.",
+            similarSpecies: ["Great Hammerhead Shark", "Scalloped Hammerhead Shark"]
+        ),
+        FishSpecies(
+            imageName: "greathammerheadshark",
+            name: "Great Hammerhead Shark",
+            habitat: "Found around coral reefs, sandy flats, channels, wrecks, and offshore waters throughout South Florida and the Florida Keys. Larger individuals often patrol reef edges and drop-offs.",
+            bestBait: "Large blue runner, jack crevalle, bonito, ladyfish, stingray, and other large fresh cut or live bait.",
+            bestTime: "Early morning, evening, and periods of moving tides.",
+            howToCatch: "Present large natural baits around reef edges, channels, or offshore structure using heavy tackle. Always keep the shark in the water and minimize handling before release.",
+            bestSetup: "Extra-heavy spinning or conventional rod with an 8000–14000 size reel, 80–100 lb braid, heavy wire or fluorocarbon leader, and a non-offset circle hook.",
+            eatingQuality: "Harvest prohibited in Florida.",
+            behavior: "Great hammerheads are solitary apex predators that feed on rays, sharks, fish, squid, and other marine animals.",
+            identificationTips: "Recognized by its very wide, nearly straight hammer-shaped head with a shallow notch in the center, extremely tall first dorsal fin, and long sickle-shaped pectoral fins.",
+            averageSize: "10–14 feet (common), with exceptionally large adults exceeding 18 feet.",
+            similarSpecies: ["Scalloped Hammerhead Shark", "Bonnethead Shark"]
+        ),
+        FishSpecies(
+            imageName: "tigershark",
+            name: "Tiger Shark",
+            habitat: "Found around reefs, beaches, channels, drop-offs, and offshore waters throughout Florida, including the Florida Keys. They often patrol deeper reef edges but may also enter shallow coastal waters.",
+            bestBait: "Large ladyfish, blue runner, jack crevalle, bonito, stingray, and other large fresh cut or live bait.",
+            bestTime: "Early morning, evening, nighttime, and during moving tides.",
+            howToCatch: "Present large natural baits around reef edges, channels, or offshore structure using heavy tackle. Always keep the shark in the water and minimize handling before release.",
+            bestSetup: "Extra-heavy spinning or conventional rod with an 8000–14000 size reel, 80–100 lb braid, heavy wire or fluorocarbon leader, and a non-offset circle hook.",
+            eatingQuality: "Good table fare when legally harvested, though many anglers choose to release them.",
+            behavior: "Tiger sharks are solitary apex predators that feed on fish, rays, sea turtles, squid, crustaceans, and many other marine animals.",
+            identificationTips: "Recognized by its broad blunt head, powerful body, and dark vertical stripes along the sides that resemble tiger markings, especially in younger sharks.",
+            averageSize: "8–12 feet (common), with exceptionally large adults exceeding 15 feet.",
+            similarSpecies: ["Bull Shark", "Great White Shark"]
+        ),
+        FishSpecies(
+            imageName: "spinnershark",
+            name: "Spinner Shark",
+            habitat: "Found around beaches, sandbars, inlets, reefs, and nearshore waters throughout Florida. They commonly follow schools of baitfish and are abundant around the Florida Keys.",
+            bestBait: "Ladyfish, mullet, blue runner, bonito, jack crevalle, and other fresh cut or live bait.",
+            bestTime: "Early morning, late afternoon, and whenever baitfish are active.",
+            howToCatch: "Present fresh cut bait or live bait near schools of baitfish or along beaches and channels. Spinner sharks are extremely acrobatic and often leap completely out of the water when hooked.",
+            bestSetup: "Heavy spinning or conventional rod with a 6000–10000 size reel, 50–80 lb braid, a heavy leader, and a non-offset circle hook.",
+            eatingQuality: "Good table fare when legally harvested and properly prepared.",
+            behavior: "Spinner sharks are fast, schooling predators famous for spinning through the air while attacking baitfish or after being hooked.",
+            identificationTips: "Recognized by its slender body, pointed snout, black tips on nearly all fins (including the anal fin), and spectacular spinning jumps.",
+            averageSize: "5–7 feet (common), with larger adults exceeding 8 feet.",
+            similarSpecies: ["Blacktip Shark", "Blacknose Shark"]
+        ),
+        FishSpecies(
+            imageName: "caribbeanreefshark",
+            name: "Caribbean Reef Shark",
+            habitat: "Found around coral reefs, reef drop-offs, patch reefs, and clear tropical waters throughout the Florida Keys and the Caribbean. They spend most of their time cruising just above the reef.",
+            bestBait: "Large pilchards, blue runner, bonito, jack crevalle, squid, and fresh cut bait.",
+            bestTime: "Morning, evening, and whenever baitfish are active around reef edges.",
+            howToCatch: "Present fresh cut bait or live bait around reef edges using heavy tackle. Minimize fight time and always release the shark without removing it from the water.",
+            bestSetup: "Heavy spinning or conventional rod with an 8000–10000 size reel, 50–80 lb braid, heavy leader, and a non-offset circle hook.",
+            eatingQuality: "Harvest prohibited in Florida.",
+            behavior: "Caribbean reef sharks are curious, active reef predators that patrol coral reefs feeding on fish, rays, squid, and crustaceans.",
+            identificationTips: "Recognized by its streamlined gray body, rounded snout, distinct black margins on the rear of the dorsal and tail fins, and its habit of cruising close to coral reefs.",
+            averageSize: "5–8 feet (common).",
+            similarSpecies: ["Blacktip Shark", "Sandbar Shark"]
+        ),
+        FishSpecies(
+            imageName: "scallopedhammerheadshark",
+            name: "Scalloped Hammerhead Shark",
+            habitat: "Found around coral reefs, offshore ledges, channels, and open coastal waters throughout South Florida and the Florida Keys. Juveniles are commonly found in shallow bays and estuaries.",
+            bestBait: "Blue runner, bonito, ladyfish, squid, mullet, and other fresh cut or live bait.",
+            bestTime: "Early morning, evening, and during moving tides.",
+            howToCatch: "Present large natural baits around reefs and offshore structure using heavy tackle. Always keep the shark in the water and minimize handling before release.",
+            bestSetup: "Heavy spinning or conventional rod with an 8000–14000 size reel, 80–100 lb braid, heavy leader, and a non-offset circle hook.",
+            eatingQuality: "Harvest prohibited in Florida.",
+            behavior: "Scalloped hammerheads often travel in schools when young but become more solitary as adults. They feed on fish, rays, squid, and crustaceans.",
+            identificationTips: "Recognized by its wide hammer-shaped head with a noticeable central notch and curved front edge. The first dorsal fin is tall but not as large as that of the Great Hammerhead.",
+            averageSize: "6–10 feet (common), with large adults exceeding 11 feet.",
+            similarSpecies: ["Great Hammerhead Shark", "Bonnethead Shark"]
+        ),
+        FishSpecies(
+            imageName: "sandbarshark",
+            name: "Sandbar Shark",
+            habitat: "Found around sandy bottoms, reefs, wrecks, channels, and coastal waters throughout Florida. Juveniles commonly inhabit shallow bays and estuaries.",
+            bestBait: "Ladyfish, blue runner, mullet, bonito, squid, and fresh cut bait.",
+            bestTime: "Early morning, evening, and during moving tides.",
+            howToCatch: "Present large natural baits around sandy bottoms, channels, and reef edges using heavy tackle. Keep the shark in the water and minimize handling before release.",
+            bestSetup: "Heavy spinning or conventional rod with an 8000–10000 size reel, 50–80 lb braid, heavy leader, and a non-offset circle hook.",
+            eatingQuality: "Good table fare when legally harvested and properly prepared.",
+            behavior: "Sandbar sharks are slow-moving coastal predators that patrol sandy bottoms and reefs feeding on fish, rays, squid, and crustaceans.",
+            identificationTips: "Recognized by its tall triangular first dorsal fin, broad rounded snout, heavy body, and bronze-gray coloration. The first dorsal fin is noticeably taller than that of most coastal sharks.",
+            averageSize: "5–7 feet (common), with large adults exceeding 8 feet.",
+            similarSpecies: ["Bull Shark", "Caribbean Reef Shark", "Blacktip Shark"]
+        ),
+        FishSpecies(
+            imageName: "atlanticsharpnoseshark",
+            name: "Atlantic Sharpnose Shark",
+            habitat: "Found around beaches, reefs, sandy bottoms, bays, estuaries, and nearshore waters throughout Florida. It is one of the most common small coastal sharks in the Gulf and Atlantic.",
+            bestBait: "Shrimp, squid, ladyfish, mullet, blue runner, and fresh cut bait.",
+            bestTime: "Morning, evening, and during moving tides.",
+            howToCatch: "Present natural bait near the bottom around reefs, beaches, and channels using medium to heavy tackle. Handle carefully and release quickly when appropriate.",
+            bestSetup: "Medium-heavy spinning rod with a 5000–6000 size reel, 30–50 lb braid, heavy fluorocarbon or wire leader, and a non-offset circle hook.",
+            eatingQuality: "Good table fare when legally harvested and properly prepared.",
+            behavior: "Atlantic Sharpnose Sharks are active coastal predators that feed on fish, shrimp, squid, and small crustaceans.",
+            identificationTips: "Recognized by its long pointed snout, slender body, white spots scattered along the sides, and black markings on the rear edges of the dorsal and tail fins.",
+            averageSize: "2.5–4 feet (common).",
+            similarSpecies: ["Blacknose Shark", "Blacktip Shark"]
+        ),
+        FishSpecies(
+            imageName: "blacknoseshark",
+            name: "Blacknose Shark",
+            habitat: "Found around sandy bottoms, reefs, beaches, bays, estuaries, and nearshore coastal waters throughout Florida, especially in the Gulf of Mexico and the Florida Keys.",
+            bestBait: "Shrimp, squid, ladyfish, mullet, blue runner, and fresh cut bait.",
+            bestTime: "Morning, evening, and during moving tides.",
+            howToCatch: "Present natural bait near the bottom around reefs, beaches, or channels using medium to heavy tackle. Handle carefully and release quickly when appropriate.",
+            bestSetup: "Medium-heavy spinning rod with a 5000–6000 size reel, 30–50 lb braid, heavy fluorocarbon or wire leader, and a non-offset circle hook.",
+            eatingQuality: "Good table fare when legally harvested and properly prepared.",
+            behavior: "Blacknose sharks are active coastal predators that feed on fish, shrimp, squid, and other small marine animals.",
+            identificationTips: "Recognized by the distinct black blotch on the tip of its snout, slender gray body, and black markings on the rear edges of most fins. The black nose mark is the easiest identifying feature.",
+            averageSize: "3–5 feet (common).",
+            similarSpecies: ["Atlantic Sharpnose Shark", "Blacktip Shark", "Spinner Shark"]
+        ),
+        FishSpecies(
+            imageName: "greatwhiteshark",
+            name: "Great White Shark",
+            habitat: "Found in offshore waters, along continental shelves, and occasionally near beaches during seasonal migrations. Great White Sharks are uncommon but occasionally observed in Florida waters, particularly during cooler months.",
+            bestBait: "Large bonito, jack crevalle, blue runner, tuna, stingray, and other large fresh cut or live bait.",
+            bestTime: "Most encounters occur during cooler months in offshore waters.",
+            howToCatch: "Great White Sharks are a protected species. If accidentally hooked, keep the shark in the water, minimize fight time, and release it immediately without removing it from the water.",
+            bestSetup: "Extra-heavy offshore tackle with an 80W conventional reel, 100–130 lb braid, heavy wind-on leader, and a non-offset circle hook when using natural bait.",
+            eatingQuality: "Harvest prohibited in Florida.",
+            behavior: "Great White Sharks are solitary apex predators that feed on large fish, rays, sharks, and marine mammals. They spend much of their time cruising offshore waters.",
+            identificationTips: "Recognized by its massive torpedo-shaped body, broad conical snout, large black eyes, gray upper body, bright white underside, and large triangular serrated teeth.",
+            averageSize: "10–16 feet (common adults), with exceptionally large individuals exceeding 20 feet.",
+            similarSpecies: ["Tiger Shark", "Bull Shark"]
+        ),
+       
+        
     ]
     
     static func findFish(named name: String) -> FishSpecies? {
-        allFish.first { $0.name == name }
+        allFish.first {
+            $0.name.caseInsensitiveCompare(name) == .orderedSame
+        }
     }
 }

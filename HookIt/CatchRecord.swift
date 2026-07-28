@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class CatchRecord: Identifiable, Codable {
     var id = UUID()
     var speciesName: String
@@ -16,13 +15,23 @@ class CatchRecord: Identifiable, Codable {
     var location: String
     var date: Date
     var notes: String
+    var imageData: Data?
     
-    init(speciesName: String, length: String, weight: String, location: String, date: Date, notes: String) {
+    init(
+        speciesName: String,
+        length: String,
+        weight: String,
+        location: String,
+        date: Date,
+        notes: String,
+        imageData: Data? = nil
+    ) {
         self.speciesName = speciesName
         self.length = length
         self.weight = weight
         self.location = location
         self.date = date
         self.notes = notes
+        self.imageData = imageData
     }
 }

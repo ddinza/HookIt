@@ -26,6 +26,16 @@ class CatchManager: ObservableObject {
         catches.append(catchRecord)
     }
     
+    func updateCatch(_ updatedCatch: CatchRecord) {
+        guard let index = catches.firstIndex(
+            where: { $0.id == updatedCatch.id }
+        ) else {
+            return
+        }
+        
+        catches[index] = updatedCatch
+    }
+    
     func deleteCatch(at offsets: IndexSet) {
         catches.remove(atOffsets: offsets)
     }
@@ -38,7 +48,10 @@ class CatchManager: ObservableObject {
     
     private func loadCatches() {
         if let data = UserDefaults.standard.data(forKey: catchesKey),
-           let decoded = try? JSONDecoder().decode([CatchRecord].self, from: data) {
+           let decoded = try? JSONDecoder().decode(
+                [CatchRecord].self,
+                from: data
+           ) {
             catches = decoded
         }
     }

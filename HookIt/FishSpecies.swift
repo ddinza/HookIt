@@ -18,12 +18,24 @@ class FishSpecies: Identifiable, Codable {
     var bestSetup: String
     var eatingQuality: String
     var behavior: String
-    var legalSize: String
-    var bagLimit: String
-    var season: String
+    var identificationTips: String
+    var averageSize: String
+    var similarSpecies: [String]
     
-    init(imageName: String, name: String, habitat: String, bestBait: String, bestTime: String, howToCatch: String, bestSetup: String, eatingQuality: String, behavior: String, legalSize: String, bagLimit: String, season: String) {
-        
+    init(
+        imageName: String,
+        name: String,
+        habitat: String,
+        bestBait: String,
+        bestTime: String,
+        howToCatch: String,
+        bestSetup: String,
+        eatingQuality: String,
+        behavior: String,
+        identificationTips: String,
+        averageSize: String,
+        similarSpecies: [String]
+    ) {
         self.imageName = imageName
         self.name = name
         self.habitat = habitat
@@ -33,8 +45,8 @@ class FishSpecies: Identifiable, Codable {
         self.bestSetup = bestSetup
         self.eatingQuality = eatingQuality
         self.behavior = behavior
-        self.legalSize = legalSize
-        self.bagLimit = bagLimit
-        self.season = season
+        self.identificationTips = identificationTips
+        self.averageSize = averageSize
+        self.similarSpecies = similarSpecies
     }
 }
