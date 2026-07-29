@@ -735,6 +735,48 @@ struct FishData {
             averageSize: "Disc width commonly ranges from 2–4 feet, with large females exceeding 5 feet.",
             similarSpecies: ["Cownose Ray", "Spotted Eagle Ray"]
         ),
+        FishSpecies(
+            imageName: "hogfish",
+            name: "Hogfish",
+            habitat: "Found around coral reefs, rocky ledges, patch reefs, and hard-bottom areas throughout South Florida and the Florida Keys. Hogfish spend much of their time searching sandy areas around reefs for crustaceans.",
+            bestBait: "Live shrimp, crabs, fiddler crabs, squid, and small pieces of cut bait.",
+            bestTime: "Can be caught year-round, with the best action during daylight hours over reefs and patch reefs.",
+            howToCatch: "Fish directly over reefs and hard-bottom areas using light tackle and natural baits. Hogfish often feed close to the bottom and require a slow, natural presentation.",
+            bestSetup: "Medium-light spinning tackle with a 2500–4000 size reel, 15–20 lb braid, 20–30 lb fluorocarbon leader, and a small circle or J-hook.",
+            eatingQuality: "Excellent. Hogfish are considered one of Florida's finest table fish, with sweet, firm white meat.",
+            behavior: "Hogfish use their elongated snouts to root through sand and rubble in search of crabs, shrimp, mollusks, and other invertebrates. They are usually found alone or in small groups.",
+            identificationTips: "Recognized by its long pig-like snout, colorful pink to reddish body, black spot on the dorsal fin, and elongated first dorsal spine in males.",
+            averageSize: "12–24 inches is common, although trophy fish may exceed 30 inches.",
+            similarSpecies: ["Mutton Snapper", "Lane Snapper"]
+        ),
+        FishSpecies(
+            imageName: "tilapia",
+            name: "Tilapia",
+            habitat: "Found in freshwater canals, lakes, ponds, reservoirs, and slow-moving rivers throughout much of Florida. Tilapia prefer warm water with abundant vegetation and structure.",
+            bestBait: "Bread, dough balls, corn, peas, algae-based baits, worms, and small pieces of shrimp.",
+            bestTime: "Most active during warm months, especially in spring and summer. Morning and late afternoon are often the most productive.",
+            howToCatch: "Use light tackle with small hooks and natural baits. Tilapia are cautious feeders and often require a subtle presentation.",
+            bestSetup: "Ultra-light or light spinning tackle with a 1000–2500 size reel, 4–8 lb line, and a small #6–#10 hook.",
+            eatingQuality: "Excellent. Tilapia have mild, flaky white meat and are widely regarded as good table fare.",
+            behavior: "Tilapia feed primarily on algae, aquatic vegetation, and small invertebrates. They often gather in schools and build circular nesting beds during spawning season.",
+            identificationTips: "Recognized by its deep, laterally compressed body, long continuous dorsal fin, faint vertical bars, and rounded tail.",
+            averageSize: "8–16 inches is common, although larger fish may exceed 20 inches.",
+            similarSpecies: ["Bluegill", "Oscar"]
+        ),
+        FishSpecies(
+            imageName: "oscar",
+            name: "Oscar",
+            habitat: "Found in freshwater canals, lakes, ponds, and slow-moving rivers throughout South Florida. Oscars prefer warm water with submerged vegetation, fallen trees, docks, and other cover.",
+            bestBait: "Live worms, small shiners, crickets, shrimp, soft plastic lures, and small crankbaits.",
+            bestTime: "Can be caught year-round in South Florida, with the best fishing during warmer months. Early morning and late afternoon are usually the most productive.",
+            howToCatch: "Fish light tackle around canal edges, vegetation, docks, and submerged structure using live bait or slowly retrieved artificial lures.",
+            bestSetup: "Light spinning tackle with a 2000–3000 size reel, 6–12 lb line, and small hooks or jigs.",
+            eatingQuality: "Good. Although not commonly harvested, Oscars have firm, mild white meat.",
+            behavior: "Oscars are aggressive predators that feed on small fish, insects, shrimp, and crustaceans. They are highly territorial and readily strike artificial lures.",
+            identificationTips: "Recognized by its dark olive to black body with bright orange and red markings, large mouth, rounded fins, and the distinctive orange-ringed eyespot near the base of the tail.",
+            averageSize: "8–14 inches is common, although larger fish may exceed 16 inches.",
+            similarSpecies: ["Tilapia", "Bluegill"]
+        ),
         
     ]
     

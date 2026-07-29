@@ -21,7 +21,7 @@ struct HomeView: View {
     @State private var showingCamera = false
     @State private var quickCatchPhoto: QuickCatchPhoto?
     @State private var showingCameraUnavailableAlert = false
-    @State private var showingIdentifyItAlert = false
+    
     
     var body: some View {
         NavigationStack {
@@ -72,9 +72,7 @@ struct HomeView: View {
                         .buttonStyle(.plain)
                         .padding(.top, 4)
                         
-                        Button {
-                            showingIdentifyItAlert = true
-                        } label: {
+                        NavigationLink(destination: IdentifyItView()) {
                             FeaturedHomeCard(
                                 title: "IdentifyIt",
                                 subtitle: "Take a photo and identify your catch.",
@@ -178,14 +176,7 @@ struct HomeView: View {
                     "Quick Catch requires a device with an available camera."
                 )
             }
-            .alert(
-                "IdentifyIt",
-                isPresented: $showingIdentifyItAlert
-            ) {
-                Button("OK", role: .cancel) { }
-            } message: {
-                Text("Fish identification is coming soon.")
-            }
+            
         }
     }
     

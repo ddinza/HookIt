@@ -479,6 +479,33 @@ struct RegulationData {
             season: "Open year-round",
             notes: "Southern Stingrays are not currently managed with statewide recreational size or bag limits in Florida. Exercise extreme caution when handling due to the venomous tail spine. Always verify current FWC regulations before harvesting. *** Safety Tip *** Never grab a stingray by the tail. Use pliers to remove the hook when possible, keep clear of the venomous barb, and shuffle your feet when wading to reduce the chance of stepping on one."
         ),
+        FishingRegulation(
+            fishName: "Hogfish",
+            imageName: "hogfish",
+            region: "Florida",
+            legalSize: "16 inches fork length (Atlantic waters)",
+            bagLimit: "1 fish per harvester per day (Atlantic waters)",
+            season: "Open year-round",
+            notes: "Atlantic regulations require a minimum size of 16 inches fork length and allow one Hogfish per person per day. Regulations differ in Gulf waters. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Tilapia",
+            imageName: "tilapia",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No statewide bag limit",
+            season: "Open year-round",
+            notes: "Most Tilapia species in Florida are non-native. There are currently no statewide recreational size or bag limits for Tilapia, although local regulations may apply. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Oscar",
+            imageName: "oscar",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No statewide bag limit",
+            season: "Open year-round",
+            notes: "Oscar are a non-native freshwater species in Florida. There are currently no statewide recreational size or bag limits, although local regulations may apply. Always verify current FWC regulations before harvesting."
+        ),
         
     ]
 
