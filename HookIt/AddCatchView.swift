@@ -14,6 +14,7 @@ struct AddCatchView: View {
     @EnvironmentObject var catchManager: CatchManager
     
     let initialImageData: Data?
+    let initialSpeciesName: String?
     let onCatchSaved: (() -> Void)?
     
     @State private var speciesName = ""
@@ -30,11 +31,20 @@ struct AddCatchView: View {
     
     init(
         initialImageData: Data? = nil,
+        initialSpeciesName: String? = nil,
         onCatchSaved: (() -> Void)? = nil
     ) {
         self.initialImageData = initialImageData
+        self.initialSpeciesName = initialSpeciesName
         self.onCatchSaved = onCatchSaved
-        _selectedImageData = State(initialValue: initialImageData)
+
+        _selectedImageData = State(
+            initialValue: initialImageData
+        )
+
+        _speciesName = State(
+            initialValue: initialSpeciesName ?? ""
+        )
     }
     
     var body: some View {

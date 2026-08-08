@@ -24,32 +24,71 @@ struct SpeciesGuideView: View {
     }
     
     var body: some View {
-        List(filteredFish) { fish in
-            NavigationLink(destination: FishDetailView(fish: fish)) {
-                HStack(spacing: 12) {
-                    Image(fish.imageName)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 90, height: 70)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                    
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(fish.name)
-                            .font(.headline)
-                        
-                        Text(fish.habitat)
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                            .lineLimit(2)
+        List {
+            Section("Species") {
+                ForEach(filteredFish) { fish in
+                    NavigationLink(
+                        destination: FishDetailView(fish: fish)
+                    ) {
+                        HStack(spacing: 12) {
+                            Image(fish.imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 90, height: 70)
+                                .clipShape(
+                                    RoundedRectangle(
+                                        cornerRadius: 12,
+                                        style: .continuous
+                                    )
+                                )
+                                .clipped()
+                            
+                            VStack(
+                                alignment: .leading,
+                                spacing: 4
+                            ) {
+                                Text(fish.name)
+                                    .font(.headline)
+                                
+                                Text(fish.habitat)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(2)
+                            }
+                        }
+                        .padding(.vertical, 6)
                     }
                 }
-                .padding(.vertical, 6)
             }
         }
         .navigationTitle("Species Guide")
-        .searchable(text: $searchText, prompt: "Search fish species")
+        .searchable(
+            text: $searchText,
+            placement: .navigationBarDrawer(
+                displayMode: .always
+            ),
+            prompt: "Search fish species"
+        )
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink {
+                    FavoritesView()
+                } label: {
+                    HStack(spacing: 5) {
+                        Image(systemName: "star.fill")
+                            .foregroundStyle(.yellow)
+
+                        Text("Favorites")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.primary)
+                    }
+                }
+            }
+        }
+        }
     }
-}
+
 
 #Preview {
     NavigationStack {

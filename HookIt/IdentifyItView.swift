@@ -17,6 +17,10 @@ struct IdentifyItView: View {
     @State private var identificationResult: FishIdentificationResult?
     @State private var matchedFish: FishSpecies?
     @State private var isAnalyzing = false
+    @State private var loadingMessage = "Analyzing your fish..."
+    @State private var showingIdentificationError = false
+    @State private var identificationErrorMessage = ""
+    @State private var showingUnableToIdentifyAlert = false
     
     var body: some View {
         ZStack {
@@ -109,7 +113,7 @@ struct IdentifyItView: View {
                                         ProgressView()
                                             .tint(.white)
                                         
-                                        Text("Analyzing Fish…")
+                                        Text(loadingMessage)
                                     }
                                     .font(.headline)
                                     .frame(maxWidth: .infinity)
@@ -184,7 +188,7 @@ struct IdentifyItView: View {
                 .padding()
             }
         }
-        .navigationTitle("IdentifyIt")
+        .navigationTitle("Identify It")
         .navigationBarTitleDisplayMode(.inline)
         .task(id: selectedPhotoItem) {
             await loadSelectedPhoto()
@@ -230,7 +234,29 @@ struct IdentifyItView: View {
             Button("OK", role: .cancel) { }
         } message: {
             Text(
-                "IdentifyIt requires a device with an available camera."
+                "Identify It requires a device with an available camera."
+            )
+        }
+        .alert(
+            "Unable to Identify Fish",
+            isPresented: $showingIdentificationError
+        ) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(
+                identificationErrorMessage.isEmpty
+                ? "We couldn't identify this fish. Try another clear side-profile photo."
+                : identificationErrorMessage
+            )
+        }
+        .alert(
+            "Fish Not Identified",
+            isPresented: $showingUnableToIdentifyAlert
+        ) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(
+                "We couldn't confidently identify this fish. Try another clear photo showing the full side of the fish."
             )
         }
     }
@@ -302,6 +328,7 @@ struct IdentifyItView: View {
         }
         
         isAnalyzing = true
+        loadingMessage = "Analyzing your fish..."
         
         defer {
             isAnalyzing = false
@@ -312,8 +339,19 @@ struct IdentifyItView: View {
             
             let result = try await GeminiService().identifyFish(
                 imageData: capturedImageData,
-                availableSpecies: speciesNames
+                availableSpecies: speciesNames,
+                onRetry: {
+                    await MainActor.run {
+                        loadingMessage = "Taking another look..."
+                    }
+                }
             )
+            if result.speciesName.caseInsensitiveCompare(
+                "Unable to Identify"
+            ) == .orderedSame {
+                showingUnableToIdentifyAlert = true
+                return
+            }
             
             matchedFish = FishData.allFish.first { fish in
                 fish.name.caseInsensitiveCompare(
@@ -326,6 +364,31 @@ struct IdentifyItView: View {
         } catch {
             print("Gemini Error:")
             print(error.localizedDescription)
+
+            if let urlError = error as? URLError {
+                switch urlError.code {
+                case .timedOut:
+                    identificationErrorMessage =
+                        "The identification took too long. Please try again."
+
+                case .notConnectedToInternet:
+                    identificationErrorMessage =
+                        "No internet connection. Please reconnect and try again."
+
+                case .networkConnectionLost:
+                    identificationErrorMessage =
+                        "The connection was interrupted. Please try again."
+
+                default:
+                    identificationErrorMessage =
+                        "We couldn't connect to the identification service. Please try again."
+                }
+            } else {
+                identificationErrorMessage =
+                    "We couldn't identify this fish. Try another clear side-profile photo."
+            }
+
+            showingIdentificationError = true
         }
     }
 }

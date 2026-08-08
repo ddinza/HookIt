@@ -12,7 +12,7 @@ struct SplashView: View {
     
     var body: some View {
         if isActive {
-            HomeView()
+            AppShellView()
         } else {
             ZStack {
                 Image("homebackground")

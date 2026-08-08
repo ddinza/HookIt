@@ -46,6 +46,34 @@ struct GeminiService {
     
     func identifyFish(
         imageData: Data,
+        availableSpecies: [String],
+        onRetry: (() async -> Void)? = nil
+    ) async throws -> FishIdentificationResult {
+        
+        do {
+            return try await performIdentification(
+                imageData: imageData,
+                availableSpecies: availableSpecies
+            )
+        } catch let error as URLError {
+            if error.code == .timedOut ||
+                error.code == .networkConnectionLost ||
+                error.code == .notConnectedToInternet {
+                
+                await onRetry?()
+                
+                return try await performIdentification(
+                    imageData: imageData,
+                    availableSpecies: availableSpecies
+                )
+            }
+            
+            throw error
+        }
+    }
+
+    private func performIdentification(
+        imageData: Data,
         availableSpecies: [String]
     ) async throws -> FishIdentificationResult {
         let apiKey = try loadAPIKey()
@@ -126,7 +154,7 @@ struct GeminiService {
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.timeoutInterval = 45
+        request.timeoutInterval = 60
         
         request.setValue(
             "application/json",

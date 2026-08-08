@@ -506,7 +506,224 @@ struct RegulationData {
             season: "Open year-round",
             notes: "Oscar are a non-native freshwater species in Florida. There are currently no statewide recreational size or bag limits, although local regulations may apply. Always verify current FWC regulations before harvesting."
         ),
+        FishingRegulation(
+            fishName: "Blackfin Tuna",
+            imageName: "blackfintuna",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Blackfin Tuna may be harvested year-round in Florida. There is currently no recreational bag limit or minimum size, but federal regulations may change. Always verify current NOAA and FWC regulations before harvesting."
+        ),
         
+        FishingRegulation(
+            fishName: "Yellowfin Tuna",
+            imageName: "yellowfintuna",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Yellowfin Tuna may be harvested year-round in Florida. There is currently no recreational bag limit or minimum size, but federal regulations may change. Always verify current NOAA and FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Atlantic Bonito",
+            imageName: "atlanticbonito",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Bonito may be harvested year-round in Florida. There are currently no statewide recreational size or bag limits, although federal regulations may change. Always verify current FWC and NOAA regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Skipjack Tuna",
+            imageName: "skipjacktuna",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Skipjack Tuna may be harvested year-round in Florida. There is currently no recreational bag limit or minimum size, although federal regulations may change. Always verify current NOAA and FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Atlantic Croaker",
+            imageName: "atlanticcroaker",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Atlantic Croaker may be harvested year-round in Florida. There are currently no statewide recreational size or bag limits. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Spot",
+            imageName: "spot",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Spot may be harvested year-round in Florida. There are currently no statewide recreational size or bag limits. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Whiting",
+            imageName: "whiting",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Whiting may be harvested year-round in Florida. There are currently no statewide recreational size or bag limits. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Caribbean Spiny Lobster",
+            imageName: "caribbeanspinylobster",
+            region: "Florida",
+            legalSize: "Carapace must exceed 3 inches",
+            bagLimit: "6 per harvester per day (Monroe County and Biscayne National Park); 12 elsewhere during regular season",
+            season: "Seasonal harvest only",
+            notes: "Harvest requires a Florida recreational saltwater fishing license and spiny lobster permit unless exempt. Mini-season and regular season dates, bag limits, and local regulations vary. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Blue Crab",
+            imageName: "bluecrab",
+            region: "Florida",
+            legalSize: "5 inches across the shell",
+            bagLimit: "No recreational bag limit",
+            season: "Open year-round",
+            notes: "Blue Crabs must measure at least 5 inches point-to-point across the shell. Egg-bearing females may not be harvested. Always verify current FWC regulations."
+        ),
+        FishingRegulation(
+            fishName: "Florida Stone Crab",
+            imageName: "floridastonecrab",
+            region: "Florida",
+            legalSize: "Claw must measure at least 2 7/8 inches",
+            bagLimit: "1 gallon of claws per person or 2 gallons per vessel",
+            season: "Seasonal harvest only",
+            notes: "Only claws may be harvested. The crab must be returned alive immediately after claw removal. Always verify current FWC regulations for season dates and limits."
+        ),
+        FishingRegulation(
+            fishName: "Florida Slipper Lobster",
+            imageName: "floridaslipperlobster",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "Included within the daily lobster bag limit",
+            season: "Seasonal harvest only",
+            notes: "Florida Slipper Lobsters are managed under Florida's recreational lobster regulations and count toward the daily lobster bag limit. A Florida recreational saltwater fishing license and lobster permit are required unless exempt. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Nassau Grouper",
+            imageName: "nassaugrouper",
+            region: "Florida",
+            legalSize: "Protected species",
+            bagLimit: "Harvest prohibited",
+            season: "Catch and release only",
+            notes: "Nassau Grouper are protected in Florida and may not be harvested or possessed. If accidentally caught, they should be released immediately with minimal handling. Always verify current FWC regulations."
+        ),
+        FishingRegulation(
+            fishName: "Scamp Grouper",
+            imageName: "scampgrouper",
+            region: "Florida",
+            legalSize: "24 inches total length (Atlantic waters)",
+            bagLimit: "Included within Florida's recreational grouper aggregate bag limit",
+            season: "Seasonal harvest only",
+            notes: "Scamp Grouper are managed under Florida's recreational grouper regulations. Minimum size, seasons, and aggregate bag limits vary by region. Always verify current FWC and NOAA regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Snowy Grouper",
+            imageName: "snowygrouper",
+            region: "Florida",
+            legalSize: "24 inches total length (Atlantic waters)",
+            bagLimit: "Included within Florida's recreational grouper aggregate bag limit",
+            season: "Seasonal harvest only",
+            notes: "Snowy Grouper are managed under Florida's recreational grouper regulations. Minimum size, seasons, and aggregate bag limits vary by region. Always verify current FWC and NOAA regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Yellowedge Grouper",
+            imageName: "yellowedgegrouper",
+            region: "Florida",
+            legalSize: "24 inches total length (Atlantic waters)",
+            bagLimit: "Included within Florida's recreational grouper aggregate bag limit",
+            season: "Seasonal harvest only",
+            notes: "Yellowedge Grouper are managed under Florida's recreational grouper regulations. Minimum size, seasons, and aggregate bag limits vary by region. Always verify current FWC and NOAA regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Yellowmouth Grouper",
+            imageName: "yellowmouthgrouper",
+            region: "Florida",
+            legalSize: "24 inches total length (Atlantic waters)",
+            bagLimit: "Included within Florida's recreational grouper aggregate bag limit",
+            season: "Seasonal harvest only",
+            notes: "Yellowmouth Grouper are managed under Florida's recreational grouper regulations. Minimum size, seasons, and aggregate bag limits vary by region. Always verify current FWC and NOAA regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Speckled Hind",
+            imageName: "speckledhind",
+            region: "Florida",
+            legalSize: "Protected species",
+            bagLimit: "Harvest prohibited",
+            season: "Catch and release only",
+            notes: "Speckled Hind are protected in Florida and federal waters. Harvest and possession are prohibited. If accidentally caught, they should be released immediately with minimal handling. Always verify current FWC and NOAA regulations."
+        ),
+        FishingRegulation(
+            fishName: "Atlantic Needlefish",
+            imageName: "atlanticneedlefish",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "Unregulated-species limit: 100 pounds or 2 fish per person per day, whichever is greater",
+            season: "Open year-round",
+            notes: "Atlantic Needlefish are generally managed under Florida's unregulated saltwater-species rules. Local gear restrictions may apply. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Red Snapper",
+            imageName: "redsnapper",
+            region: "Florida",
+            legalSize: "Atlantic state waters: 20 inches total length; Gulf: 16 inches total length",
+            bagLimit: "Atlantic state waters: 2 per person; Gulf: 2 per person",
+            season: "Seasonal; varies by coast and year",
+            notes: "Atlantic federal waters are currently closed to recreational Red Snapper harvest, while Florida Atlantic state waters are open under state regulations. Gulf seasons are announced annually. Reef-fish gear and reporting requirements may apply. Always verify current FWC and NOAA regulations before fishing."
+        ),
+        FishingRegulation(
+            fishName: "Ballyhoo",
+            imageName: "ballyhoo",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "Unregulated-species limit: 100 pounds or 2 fish per person per day, whichever is greater",
+            season: "Open year-round",
+            notes: "Ballyhoo are commonly harvested for recreational bait use and are generally managed under Florida's unregulated saltwater-species rules. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Gray Triggerfish",
+            imageName: "graytriggerfish",
+            region: "Florida",
+            legalSize: "15 inches fork length",
+            bagLimit: "1 per person",
+            season: "Seasonal; varies by Gulf and Atlantic regulations",
+            notes: "Gray Triggerfish are managed under federal reef fish regulations. Seasons, minimum sizes, and harvest rules vary between Gulf and Atlantic waters. Always verify current FWC and NOAA regulations before harvesting."
+        ),
+        
+        FishingRegulation(
+            fishName: "Cubera Snapper",
+            imageName: "cuberasnapper",
+            region: "Florida",
+            legalSize: "12 inches total length",
+            bagLimit: "Included within Florida's 10-snapper aggregate bag limit",
+            season: "Open year-round",
+            notes: "Cubera Snapper are included in Florida's recreational snapper aggregate bag limit. Regulations may vary in federal waters. Always verify current FWC and NOAA regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "Sea Chub",
+            imageName: "seachub",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "Unregulated-species limit: 100 pounds or 2 fish per person per day, whichever is greater",
+            season: "Open year-round",
+            notes: "Sea Chub are generally managed under Florida's unregulated saltwater-species rules. Local regulations may apply. Always verify current FWC regulations before harvesting."
+        ),
+        FishingRegulation(
+            fishName: "White Grunt",
+            imageName: "whitegrunt",
+            region: "Florida",
+            legalSize: "No minimum size",
+            bagLimit: "Unregulated-species limit: 100 pounds or 2 fish per person per day, whichever is greater",
+            season: "Open year-round",
+            notes: "White Grunt are generally managed under Florida's unregulated saltwater-species rules. Always verify current FWC regulations before harvesting."
+        ),
     ]
 
     static func findRegulation(named fishName: String) -> FishingRegulation? {

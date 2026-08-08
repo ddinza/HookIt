@@ -12,6 +12,9 @@ struct IdentifyResultView: View {
     let matchedFish: FishSpecies?
     
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var catchManager: CatchManager
+    @State private var showingAddCatch = false
+    @State private var navigateToMyCatches = false
     
     var body: some View {
         ScrollView {
@@ -25,6 +28,19 @@ struct IdentifyResultView: View {
                 } else {
                     speciesUnavailableCard
                 }
+                
+                Button {
+                        showingAddCatch = true
+                    } label: {
+                        Label(
+                            "Save to My Catches",
+                            systemImage: "square.and.arrow.down"
+                        )
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                    }
+                    .buttonStyle(.borderedProminent)
                 
                 if !result.alternativeMatches.isEmpty {
                     alternativesSection
@@ -46,6 +62,28 @@ struct IdentifyResultView: View {
         }
         .navigationTitle("Identification Result")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showingAddCatch) {
+            AddCatchView(
+                initialImageData: imageData,
+                initialSpeciesName: result.speciesName,
+                onCatchSaved: {
+                    showingAddCatch = false
+
+                    DispatchQueue.main.asyncAfter(
+                        deadline: .now() + 0.2
+                    ) {
+                        navigateToMyCatches = true
+                    }
+                }
+            )
+            .environmentObject(catchManager)
+        }
+        .navigationDestination(
+            isPresented: $navigateToMyCatches
+        ) {
+            MyCatchesView()
+                .environmentObject(catchManager)
+        }
     }
     
     private var photoPreview: some View {
