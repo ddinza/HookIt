@@ -111,6 +111,9 @@ struct FishDetailView: View {
         }
         .navigationTitle(fish.name)
         .navigationBarTitleDisplayMode(.inline)
+        .safeAreaInset(edge: .bottom) {
+                    Color.clear.frame(height: 90)
+                }
         .toolbar {
             Button {
                 favoritesManager.toggleFavorite(fish)

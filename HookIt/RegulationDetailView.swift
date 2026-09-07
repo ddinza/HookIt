@@ -62,6 +62,9 @@ struct RegulationDetailView: View {
             }
         }
         .navigationTitle("Regulations")
+        .safeAreaInset(edge: .bottom) {
+                    Color.clear.frame(height: 90) 
+                }
     }
 }
 
