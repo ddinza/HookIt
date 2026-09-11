@@ -171,7 +171,7 @@ struct HomeView: View {
         }
         .padding()
         .background(
-            Color.gray.opacity(0.08)
+            Color(uiColor: .secondarySystemGroupedBackground)
         )
         .clipShape(
             RoundedRectangle(
@@ -401,9 +401,10 @@ struct FeaturedHomeCard: View {
             subtitle: subtitle,
             imageName: imageName,
             background: AnyShapeStyle(
-                Color.blue.opacity(0.08)
-            )
+                Color(red: 12/255, green: 69/255, blue: 181/255))
         )
+        .environment(\.colorScheme, .dark)
+        
     }
 }
 
@@ -454,7 +455,7 @@ private struct HomeCardLayout: View {
 
                 Text(subtitle)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.primary)
                     .multilineTextAlignment(.leading)
             }
 
